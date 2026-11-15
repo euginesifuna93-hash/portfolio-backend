@@ -37,9 +37,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 // This serves your index.html when someone visits the root URL
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
-});
+//app.get('/', (req, res) => {
+  //  res.sendFile(path.join(__dirname, '../frontend/index.html'));
+//});
 
 
 // Rate Limiter: Max 5 requests per 15 minutes per IP address
